@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{resume}[2015/05/25 An elegant Résumé class]
+\ProvidesClass{template/resume}[2015/05/25 An elegant Résumé class]
 \LoadClass[11pt]{article}
 
 % disable indent globally
@@ -14,14 +14,14 @@
 \RequirePackage{url}
 \urlstyle{tt}
 % use fontawesome
-\RequirePackage{fontawesome}
+\RequirePackage{template/fontawesome}
 % use xcolor for customizing color
 %\RequirePackage[usenames,dvipsnames]{xcolor}
 % loading fonts
 \RequirePackage{fontspec}
 % Main document font
 \setmainfont[
-  Path = fonts/Main/ ,
+  Path = template/fonts/Main/ ,
   Extension = .otf ,
   UprightFont = *-regular ,
   BoldFont = *-bold ,
