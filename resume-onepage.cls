@@ -34,8 +34,8 @@
 	a4paper,
 	left=0.7in,
 	right=0.7in,
-	top=0.40in,
-	bottom=0.25in,
+	top=0.70in,
+	bottom=0.55in,
 	nohead
 ]{geometry}
 
@@ -48,7 +48,7 @@
 \RequirePackage[super]{nth}
 
 \titleformat{\section}         % Customise the \section command 
-  {\Large\scshape\raggedright} % Make the \section headers large (\Large),
+  {\scshape\raggedright} % Make the \section headers large (\Large),
                                % small capitals (\scshape) and left aligned (\raggedright)
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
@@ -56,7 +56,7 @@
 \titlespacing*{\section}{0cm}{*1.8}{*1.8}
 
 \titleformat{\subsection}
-  {\large\raggedright}
+  {\raggedright}
   {}{0em}
   {}
 \titlespacing*{\subsection}{0cm}{*1.8}{*0.6}
