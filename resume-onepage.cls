@@ -16,7 +16,7 @@
 % use fontawesome
 \RequirePackage{template/fontawesome}
 % use xcolor for customizing color
-%\RequirePackage[usenames,dvipsnames]{xcolor}
+\RequirePackage[usenames,dvipsnames]{xcolor}
 % loading fonts
 \RequirePackage{fontspec}
 % Main document font
@@ -32,10 +32,10 @@
 
 \RequirePackage[
 	a4paper,
-	left=0.7in,
-	right=0.7in,
-	top=0.70in,
-	bottom=0.55in,
+	left=0.4in,
+	right=0.4in,
+	top=0.3in,
+	bottom=0.3in,
 	nohead
 ]{geometry}
 
@@ -119,4 +119,14 @@
 \newcommand{\role}[2]{
   {\par \textit{#1} ~ #2 \par}
   \vspace{0.85ex}
+}
+
+\newcommand{\updateddate}{
+    \vspace*{\fill}
+    \noindent\hfill{\color{gray}Last updated on \today}
+}
+
+\newcommand{\updateddatecn}{
+    \vspace*{\fill}
+    \noindent\hfill{\color{gray}最后更新于 \number\year 年 \number\month 月 \number\day 日}
 }
